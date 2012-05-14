@@ -18,3 +18,8 @@ Usage
 		});
 	});
 	// {"id":1,"author":"John Doe","recipients":[{"id":5,"name":"Jane Doe"},{"id":9,"name":"Adam Smith"}]}
+
+License
+---
+
+Licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
