@@ -6,15 +6,15 @@ DSL for generating JSON in PHP. Inspired by [JBuilder](https://github.com/rails/
 Usage
 ---
 
-``` php
-echo JSONBuilder::object(function($json) use($mesage) {
-	$json->id = $message->id;
-	$json->author = $message->author()->fullName();
+	use \jsonbuilder\JSONBuilder;
 
-	$json->recipients($message->recipients(), function($json, $recipient) {
-		$json->id = $recipient->id;
-		$json->name = $recipient->fullName();
+	echo JSONBuilder::object(function($json) use($message) {
+		$json->id = $message->id;
+		$json->author = $message->author()->fullName();
+		
+		$json->recipients($message->recipients(), function($json, $recipient) {
+			$json->id = $recipient->id;
+			$json->name = $recipient->fullName();
+		});
 	});
-});
-// {"id":1,"author":"John Doe","recipients":[{"id":5,"name":"Jane Doe"},{"id":9,"name":"Adam Smith"}]}
-```
+	// {"id":1,"author":"John Doe","recipients":[{"id":5,"name":"Jane Doe"},{"id":9,"name":"Adam Smith"}]}
