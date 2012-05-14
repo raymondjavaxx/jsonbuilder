@@ -1,0 +1,20 @@
+{
+	"name": "jsonbuilder/jsonbuilder",
+	"type": "library",
+	"description": "DSL for generating JSON in PHP",
+	"keywords":[],
+	"homepage":"http://github.com/raymondjavaxx/jsonbuilder",
+	"license":"MIT",
+	"authors":[
+		{
+			"name": "Ramon Torres",
+			"email": "raymondjavaxx@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-0": {"jsonbuilder": "libraries/"}
+	},
+	"target-dir": "jsonbuilder",
+	"require": {
+	}
+}
