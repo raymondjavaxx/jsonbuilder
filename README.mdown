@@ -3,6 +3,8 @@ JSONBuilder
 
 DSL for generating JSON in PHP. Inspired by [JBuilder](https://github.com/rails/jbuilder).
 
+[![Build Status](https://secure.travis-ci.org/raymondjavaxx/jsonbuilder.png)](http://travis-ci.org/raymondjavaxx/jsonbuilder)
+
 Usage
 ---
 
