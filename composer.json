@@ -2,7 +2,7 @@
 	"name": "jsonbuilder/jsonbuilder",
 	"type": "library",
 	"description": "DSL for generating JSON in PHP",
-	"keywords":[],
+	"keywords":["json", "dsl", "builder"],
 	"homepage":"http://github.com/raymondjavaxx/jsonbuilder",
 	"license":"MIT",
 	"authors":[
