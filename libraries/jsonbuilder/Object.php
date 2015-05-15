@@ -22,18 +22,18 @@ class Object {
 			}
 
 			if (is_object($data) && is_a($data, '\Closure')) {
-				$this->_initializeWithCallback($data);
+				$this->initializeWithCallback($data);
 			} else {
-				$this->_initializeWithMap($data, $map);
+				$this->initializeWithMap($data, $map);
 			}
 		}
 	}
 
-	protected function _initializeWithCallback(\Closure $callback) {
+	protected function initializeWithCallback(\Closure $callback) {
 		$callback->__invoke($this);
 	}
 
-	public function _initializeWithMap($data, $map) {
+	public function initializeWithMap($data, $map) {
 		$callback = $map;
 
 		if ($map === null || is_array($map)) {
