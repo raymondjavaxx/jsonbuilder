@@ -21,7 +21,7 @@ class Object {
 				throw new Exception("Data must be an object or array");
 			}
 
-			if (is_object($data) and is_a($data, '\Closure')) {
+			if (is_object($data) && is_a($data, '\Closure')) {
 				$this->_initializeWithCallback($data);
 			} else {
 				$this->_initializeWithMap($data, $map);
